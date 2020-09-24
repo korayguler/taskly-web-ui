@@ -12,7 +12,7 @@ SCSS
 #### Preview
 
 ```
-https://korayguler.github.io/ui/taskly/
+https://korayguler.github.io/taskly-web-ui/
 ```
 
 #### Desing
