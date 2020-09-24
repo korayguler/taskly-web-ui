@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --color-yellow: #f8d57e;
+  --color-gray: #f6f7fb;
+  --color-text: #2c2543;
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background: #f6f7fb;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .left-area {
+  width: 550px;
+  height: auto;
+  margin: auto 30px;
+}
+
+main .left-area .logo {
+  margin: 30px auto 16px 60px;
+}
+
+main .left-area .pinned .left-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 22px;
+  margin-top: 60px;
+}
+
+main .left-area .pinned .left-title h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+main .left-area .pinned .left-title a {
+  color: var(--color-yellow);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main .left-area .pinned .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.25);
+          box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+main .left-area .pinned .card .card-img {
+  margin-right: 20px;
+}
+
+main .left-area .pinned .card .card-img img {
+  width: 35px;
+}
+
+main .left-area .pinned .card .card-content .task {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+main .left-area .pinned .card .card-content .task-time {
+  font-size: 1rem;
+}
+
+main .left-area .pinned .card .card-content .tag,
+main .left-area .pinned .card .card-content .desc {
+  font-size: 0.9rem;
+}
+
+main .left-area .pinned .card .card-content .tag {
+  background-color: var(--color-yellow);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main .left-area .pinned .calendar {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+          box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+}
+
+main .left-area .pinned .calendar .months {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[7];
+      grid-template-columns: repeat(7, auto);
+  justify-items: center;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  color: var(--color-yellow);
+}
+
+main .left-area .pinned .calendar .months-numbers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  grid-row-gap: 20px;
+  font-size: 0.8rem;
+}
+
+main .left-area .pinned .calendar .months-numbers span.active {
+  border-bottom: 2px solid var(--color-yellow);
+  border-top: 2px solid var(--color-yellow);
+}
+
+main .left-area .pinned .card-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+          box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+}
+
+main .left-area .pinned .card-mini .card-img {
+  margin-right: 20px;
+}
+
+main .left-area .pinned .card-mini .card-img img {
+  width: 35px;
+}
+
+main .left-area .pinned .card-mini .task {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+main .left-area .pinned .card-mini .task-time {
+  font-size: 0.8rem;
+  line-height: 3.1rem;
+  position: absolute;
+  right: 20px;
+}
+
+main .center-area {
+  width: 50%;
+  height: auto;
+  padding: 30px;
+}
+
+main .center-area .today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+main .center-area .today .add {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+main .center-area .today .add img {
+  height: 40px;
+  width: 40px;
+}
+
+main .center-area .today div h1 {
+  font-weight: 100;
+}
+
+main .center-area .today div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .center-area .today div span img {
+  height: 100%;
+}
+
+main .center-area .today div span h1 {
+  font-size: 1.9rem;
+  color: var(--color-yellow);
+}
+
+main .center-area .timeline .card-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--color-yellow);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+main .center-area .timeline .card-mini .task-time {
+  margin-right: 15px;
+}
+
+main .center-area .timeline .card-mini .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center-area .timeline .card-mini .card .card-content {
+  margin-left: 15px;
+  font-size: 1.1rem;
+}
+
+main .center-area .timeline .list-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+main .center-area .timeline .list-card .task-time {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  color: #2c2543;
+}
+
+main .center-area .timeline .list-card div {
+  margin-top: 15px;
+  margin-left: -5px;
+}
+
+main .center-area .timeline .list-card div ul {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+main .center-area .timeline .list-card div ul li {
+  margin-bottom: 5px;
+  list-style-type: circle;
+}
+
+main .center-area .timeline .list-card div .card-content {
+  margin-left: 15px;
+  font-size: 1.1rem;
+}
+
+main .right-area {
+  width: 500px;
+  margin: 30px;
+}
+
+main .right-area .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+main .right-area .profile .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+main .right-area .profile .text a {
+  color: var(--color-yellow);
+}
+
+main .right-area .profile .profile-pic {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+main .right-area .profile .profile-pic img {
+  width: 40px;
+}
+
+main .right-area .player {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+          box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+}
+
+main .right-area .player .time {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+main .right-area .player .time .bar {
+  width: 100%;
+  height: 3px;
+  background: var(--color-yellow);
+  position: relative;
+}
+
+main .right-area .player .time .bar .start {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+main .right-area .player .time .bar .finish {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+main .right-area .player .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .right-area .player .buttons button {
+  border: none;
+  background: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  outline: none;
+}
+
+main .right-area .player .move-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  right: 15px;
+  cursor: pointer;
+}
+
+main .right-area .player .cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .right-area .player .cover .cover-img {
+  height: 36px;
+}
+
+main .right-area .player .cover .cover-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+main .right-area .clock {
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 30px;
+  color: #2c2543;
+  -webkit-box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+          box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+}
+
+main .right-area .clock h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+main .right-area .clock div span {
+  font-size: 1.2rem;
+  color: #2c2543;
+}
+
+main .right-area .clock div img {
+  width: 30px;
+}
+
+main .right-area .clock .move-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  right: 15px;
+}
+
+main .right-area .more {
+  -webkit-box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+          box-shadow: 10px 30px 30px rgba(177, 188, 199, 0.09);
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+main .right-area .more h2 {
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #2c2543;
+}
+
+main .right-area .more h4 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #667180;
+}
+
+main .right-area .more .close-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  right: 15px;
+}
+
+main .right-area .more div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main .right-area .more div .person {
+  width: 90px;
+}
+
+main .right-area .more div .go {
+  width: 40px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1080px) {
+  main {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  main .left-area {
+    width: 100%;
+    height: auto;
+    margin: auto 30px;
+  }
+  main .center-area {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  main .right-area {
+    width: 100%;
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .left-area {
+    width: 70%;
+    height: auto;
+    margin: auto 30px;
+  }
+  main .center-area {
+    width: 85%;
+    height: auto;
+    padding: 30px;
+  }
+  main .right-area {
+    width: 73%;
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .left-area {
+    width: 90%;
+    height: auto;
+    margin: auto 0;
+  }
+  main .center-area {
+    width: 95%;
+    height: auto;
+    padding: 30px;
+  }
+  main .right-area {
+    width: 93%;
+    margin: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .left-area {
+    width: 60%;
+    height: auto;
+    margin: auto 0;
+  }
+  main .center-area {
+    width: 95%;
+    height: auto;
+    padding: 30px;
+  }
+  main .right-area {
+    width: 53%;
+    margin: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
