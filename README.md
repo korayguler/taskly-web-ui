@@ -1,8 +1,8 @@
-### Taskly Web UI
+#### Taskly Web UI
 
 <hr>
 
-### Tech Stack
+#### Tech Stack
 
 ```
 HTML
